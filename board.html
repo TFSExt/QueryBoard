@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Query board</title>
+</head>
+<body>
+    <script src="vsts/VSS.SDK.min.js"></script>
+
+    <script src="knockout/knockout-latest.js"></script>
+
+    <script src="js/model.js"></script>
+    <script src="js/viewModel.js"></script>
+
+    <script>
+        VSS.init();
+
+        var module = function() {
+
+
+            VSS.notifyLoadSucceeded();
+        }
+
+        VSS.require([
+
+        ],module);
+    </script>
+
+    <div id="container">
+        <h1>It works!</h1>
+    </div>
+</body>
+</html>
